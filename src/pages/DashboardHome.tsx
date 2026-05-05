@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import activeUsersIcon from '../assets/active_users.svg';
-import usersIcon from '../assets/users_icon.svg';
+import usersIcon from '../assets/users.svg';
 import usersWithLoansIcon from '../assets/users_with_loans.svg';
 import usersWithSavingsIcon from '../assets/users_with_savings.svg';
 import { StatCard } from '../components/StatCard';
