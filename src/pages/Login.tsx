@@ -25,7 +25,7 @@ export function Login() {
     <main className="login-page">
       <section className="login-page__illustration" aria-label="Lendsqr sign in">
         <Logo />
-        <img className="login-art" src={loginArt} alt="" aria-hidden="true" />
+        <img className="login-art" src={loginArt}  alt="" aria-hidden="true" />
       </section>
       <section className="login-page__form-panel">
         <form className="login-card" onSubmit={handleSubmit} noValidate>
