@@ -90,26 +90,29 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: clamp(56px, 8vh, 106px) 9vw 48px;
+    padding: clamp(56px, 8vh, 106px) clamp(32px, 7vw, 96px) 48px;
   }
 
   &__form-panel {
     align-items: center;
     box-shadow: -18px 0 42px rgba(84, 95, 125, 0.08);
     display: flex;
+    justify-content: center;
     padding: 40px 7vw;
   }
 }
 
 .login-art {
+  align-self: center;
   display: block;
   height: auto;
   margin-top: clamp(86px, 13vh, 150px);
-  max-width: 600px;
-  width: 100%;
+  max-width: 100%;
+  width: clamp(420px, 42vw, 600px);
 }
 
 .login-card {
+  margin: 0 auto;
   max-width: 460px;
   width: 100%;
 
@@ -853,15 +856,26 @@ table {
     grid-template-columns: 1fr;
 
     &__illustration {
-      gap: 42px;
-      min-height: 380px;
-      padding: 32px;
+      align-items: center;
+      min-height: 430px;
+      padding: 32px 32px 24px;
+
+      .logo {
+        align-self: flex-start;
+      }
     }
 
     &__form-panel {
       box-shadow: none;
+      justify-content: center;
       padding: 32px;
     }
+  }
+
+  .login-art {
+    margin-top: 54px;
+    max-width: 100%;
+    width: clamp(340px, 72vw, 560px);
   }
 
   .topbar {
@@ -957,7 +971,12 @@ table {
   }
 
   .login-art {
-    margin-top: 0;
-    max-width: 100%;
+    margin-top: 36px;
+    max-width: 360px;
+    width: 100%;
+  }
+
+  .login-card {
+    max-width: 420px;
   }
 }
