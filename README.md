@@ -17,21 +17,6 @@ React, TypeScript, and SCSS implementation of the Lendsqr admin console assessme
 - **Local mock API service** to keep the assessment self-contained while still returning 500 user records.
 - **Local storage cache** for the user details requirement and offline-friendly detail retrieval.
 
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-## Useful Commands
-
-```bash
-npm run build
-npm run test:run
-npm run lint
-```
-
 ## Routes
 
 - `/login`
@@ -39,10 +24,3 @@ npm run lint
 - `/dashboard/users`
 - `/dashboard/users/:userId`
 
-## Deployment
-
-Deploy the repository to a free host such as Vercel or Netlify and use a URL in this format:
-
-```text
-https://<candidate-name>-lendsqr-fe-test.<cloud-platform-domain>
-```

@@ -10,8 +10,6 @@ Lendsqr frontend assessment admin console.
 
 ## App URL
 
-Replace this with the deployed URL:
-
 https://michael-ebube-lendsqr-fe-test.vercel.app
 
 ## Source Code
