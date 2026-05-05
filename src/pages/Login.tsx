@@ -8,6 +8,7 @@ export function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -44,14 +45,18 @@ export function Login() {
             <span>Password</span>
             <div className="login-card__password">
               <input
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
                 placeholder="Password"
                 aria-invalid={Boolean(error)}
               />
-              <button type="button" aria-label="Show password">
-                Show
+              <button
+                type="button"
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+                onClick={() => setShowPassword((value) => !value)}
+              >
+                {showPassword ? 'Hide' : 'Show'}
               </button>
             </div>
           </label>
